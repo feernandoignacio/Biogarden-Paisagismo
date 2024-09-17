@@ -1,0 +1,46 @@
+.button-header {
+ display: inline-block;
+ height: 40px;
+ background-color: #a3ab98;
+ color: #F6EFDD;
+ padding-left: 20px;
+ padding-right: 20px;
+ line-height: 40px;
+ margin-top: -7px;
+ font-family: "Marcellus SC", serif;
+ text-decoration: none;
+ cursor: pointer;
+ border: none;
+}
+
+.button-header:hover {
+    opacity: 0.9;
+}
+
+.button-header:active {
+    opacity: 0.8;
+}
+
+.button-footer {
+ display: inline-block;
+ height: 35px;
+ width: 100px;
+ background-color: #a3ab98;
+ color: #F6EFDD;
+ padding: 5px 30px;
+ line-height: 30px;
+ margin-top: 50px;
+ font-family: "Marcellus SC", serif;
+ text-decoration: none;
+ cursor: pointer;
+ border: none; 
+ text-align: center;
+}
+
+.button-footer:hover {
+    opacity: 0.9;
+}
+
+.button-footer:active {
+    opacity: 0.8;
+}

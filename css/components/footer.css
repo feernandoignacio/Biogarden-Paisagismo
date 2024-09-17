@@ -1,0 +1,50 @@
+.footer {
+    background-color: #2B4739;
+    opacity: 0.9;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    border: none;
+    padding: 40px 20px 0px 150px;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+}
+
+.info {
+    line-height: 25px;
+    display:flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+    font-family: "Marcellus SC", serif;
+    font-size: 17px;
+    font-weight: 200;
+    color: #F6EFDD;
+    
+}
+
+.contact {
+    font-size: 50px;
+    font-family: "Marcellus SC", serif;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    flex-direction: column;
+    color: #F6EFDD;
+}
+
+.contact::after {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #F6EFDD;
+    width: calc(100% - 200px);
+    position: absolute;
+    left: 100px;
+}

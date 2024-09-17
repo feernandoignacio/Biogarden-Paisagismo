@@ -1,0 +1,45 @@
+.wapper-paleta {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.name-color{
+    font-family: "Marcellus SC", serif;
+}
+
+.wapper-paleta .paleta-de-cores.-space {
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+
+.wapper-materiais {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.name-texture{
+    font-family: "Marcellus SC", serif;
+}
+
+.wapper-materiais .paleta-de-texture{
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+.wapper-materiais .paleta-de-texture:nth-child(odd) {
+    margin-right: 50px;
+}
+
+.wapper-materiais .materiais {
+    width: 200px;
+    height: 200px;
+}
