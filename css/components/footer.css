@@ -7,9 +7,9 @@
 }
 
 footer .contact {
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Marcellus SC", serif;
-    margin: 20px 0 40px;
+    margin: 15px 0 20px;
     text-align: center;
     color: #F6EFDD;
     text-shadow: 2px 4px 13px #000;
@@ -28,19 +28,20 @@ footer .contact {
 }
 
 .info {
-    line-height: 25px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    margin-top: 10px;
+    line-height: 20px;
+    gap: 12px;
     text-align: center;
     font-family: "Marcellus SC", serif;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 200;
     color: #F6EFDD;
 }
 
 .footer-icons {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 30px;
