@@ -1,8 +1,337 @@
+/*MOBILE STYLES (max-width: 1020px)*/
+@media screen and (max-width: 1020px) {
+
+  /* Header/Menu */
+  .menu-desktop {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #2B4739;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  .menu-desktop.active {
+    display: flex;
+  }
+
+  .btn-abrir-menu {
+    display: block;
+  }
+
+  .link-menu,
+  .button-header {
+    color: #F6EFDD;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 10px;
+    top: 4px;
+    margin-right: 240px;
+  }
+
+  /* Banner */
+  .banner {
+    min-height: 680px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .box-logo {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 18px;
+    margin: 0;
+    padding-top: 30px;
+    color: #F6EFDD;
+    text-shadow: 1px 2px 6px #000;
+    opacity: 0.7;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin: 0px;
+    color: #F6EFDD;
+    text-shadow: 1px 2px 6px #000;
+    opacity: 0.6;
+  }
+
+  .text-home {
+    background-color: #2B4739;
+    width: 90%;
+    max-width: 360px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 130px auto 0px auto;
+    animation: fadeInUp 0.9s ease-out both;
+    will-change: transform, opacity;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    to {
+      opacity: 0.9;
+      transform: translateY(0);
+    }
+  }
 
 
-@media screen and (max-width: 1200px){
 
-     .menu-desktop, .button-header{
-        display: none;
-     }
+  .slogan-top1 {
+    font-family: "Marcellus SC", serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+    padding: 4px 0;
+    color: #F6EFDD;
+  }
+
+  .slogan-top2 {
+    margin-bottom: 0;
+    font-family: "Marcellus SC", serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+    padding: 4px 0;
+    color: #F6EFDD;
+  }
+
+
+  /* Quem Somos */
+  .title-second {
+    text-align: center;
+    color: #2B4739;
+    font-size: 40px;
+    margin: 20px 0 20px;
+    line-height: 1.2;
+  }
+
+  #text-sobre {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  /* Onde Encontrar / Mapa */
+  #onde-encontrar {
+    margin-top: 80px;
+    font-size: 40px;
+    text-align: center;
+    color: #2B4739;
+  }
+
+  .map,
+  article {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  article iframe {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+  }
+
+  /* Produtos */
+  .banner-products {
+    width: 100vw;
+    height: 250px;
+    margin-top: -20px;
+    padding-bottom: 60px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .title-products {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .box-list {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    margin: 10px auto 0;
+    border-radius: 10px;
+  }
+
+  .dt-mid {
+    font-size: 12px;
+    padding: 3px 0;
+  }
+
+  .dd-mid {
+    font-size: 9px;
+    padding-top: 3px;
+  }
+
+  .title-mid {
+    font-size: 10px;
+    padding-top: 0;
+  }
+
+  #sublogo-mid {
+    font-size: 6px;
+    margin-bottom: -9px;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-top: -30px;
+  }
+
+  .product {
+    padding: 0.75rem;
+    margin-top: 50px;
+  }
+
+  .product-name {
+    font-size: 0.9rem;
+  }
+
+  /* Materiais & Paleta */
+  .banner-materials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 2rem 1rem;
+    background-size: cover;
+  }
+
+  .title-materials {
+    font-size: 28px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .box-materials {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 350px;
+    margin: 10px 0 0;
+    border-radius: 10px;
+    padding: 0 20px;
+  }
+
+  .description {
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.4em;
+  }
+
+  .wapper-paleta,
+  .wapper-materiais {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .paleta-de-cores,
+  .paleta-de-texture,
+  .paleta-de-materiais {
+    max-width: 100%;
+    min-height: 200px;
+    padding: 12px;
+  }
+
+  .paleta,
+  .materiais {
+    max-height: 120px;
+  }
+
+  .name-color,
+  .name-texture {
+    font-size: 14px;
+    min-height: 36px;
+  }
+
+  /* Serviços */
+  .banner-service {
+    height: 100px;
+    padding-top: 20px;
+  }
+
+  .title-service {
+    font-size: 28px;
+  }
+
+  .description-color {
+    font-size: 15px;
+    padding: 0 10px;
+    gap: 22px;
+    margin: 30px 0;
+  }
+
+  .black-bold {
+    font-size: 18px;
+  }
+
+  .paragraph-block {
+    gap: 8px;
+  }
+
+  /* Carrossel */
+  .item {
+    max-width: 280px;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    font-size: 1.5rem;
+  }
+
+  .dots {
+    margin-top: 10px;
+  }
+
+  .slider-container {
+    margin-top: 40px;
+  }
+
+  /* Ocultar menu desktop no mobile */
+  .menu-desktop,
+  .button-header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -1,944 +1,175 @@
-
-.container{
-    margin: 0px 80px;
-
-}
- .img-products { 
-    margin-top: 100px;
-    margin-left: 100px;
-}
-.products-name {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 155px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-
-.container-mid {
-    margin: 20px 530px;
-    text-align: center;
-}
-.img-mid {
-    margin-top: -265px;
-}
-.products-mid{
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 100px;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-
-.container-right {
-    margin: 20px 50px;
-    text-align: right;
-}
-.img-right {
-    margin-top: -303px;
-    margin-right: 80px;
-}
-.products-right {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 125px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-gominha{
-    margin: 20px 110px;
-    margin-left: 210px;
-}
-
-
- .img-gominha { 
-    margin-top: 80px;
-    margin-left: 100px;
-}
-.products-gominha {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: -50px 47px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-cachepot-americano {
-    margin: 20px 570px;
-}
-.img-cachepot-americano {
-    margin-top: -225px;
-    text-align: center;
-}
-.products-cachepot-americano{
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-left: 30px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-.container-palla {
-    margin: 20px 120px;
-    text-align: right;
-}
-.img-palla {
-    margin-top: -260px;
-    margin-right: 80px;
-}
-.products-palla {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 145px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-trivial{
-    margin: 20px 110px;
-
-}
- .img-trivial { 
-    margin-top: 150px;
-    margin-left: 120px;
-}
-.products-trivial {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 162px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-pezinho {
-    margin: 20px 530px;
-}
-.img-pezinho {
-    margin-top: -200px;
-    text-align: center;
-}
-.products-pezinho{
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-.container-cachepot-bally {
-    margin: 20px 200px;
-    text-align: right;
-}
-.img-cachepot-bally {
-    margin-top: -210px;
-}
-.products-cachepot-bally {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 0px 5px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-cachepot-bola {
-    margin: 20px 110px;
-
-}
- .img-cachepot-bola { 
-    margin-top: 150px;
-    margin-left: 20px;
-}
-.products-cachepot-bola {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: -35px 120px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-cachepot-esfera {
-    margin: 20px 580px;
-}
-.img-cachepot-esfera {
-    margin-top: -200px;
-    text-align: center;
-}
-.products-cachepot-esfera {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-left: 30px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-.container-cilindro-baixo {
-    margin: 20px 185px;
-    text-align: right;
-}
-.img-cilindro-baixo {
-    margin-top: -210px;
-}
-.products-cilindro-baixo {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 0px 17px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-cilindro-alto{
-    margin: 20px 110px;
-
-}
- .img-cilindro-alto { 
-    margin-top: 150px;
-    margin-left: 120px;
-}
-.products-cilindro-alto {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 128px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-cilindro-esfera {
-    margin: 20px 520px;
-}
-.img-cilindro-esfera {
-    margin-top: -265px;
-    text-align: center;
-}
-.products-cilindro-esfera {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 8px;
-    margin-left: 30px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-.container-vietnam {
-    margin: 10px 170px;
-    text-align: right;
-}
-.img-cilindro-vietnam {
-    margin-top: -270px;
-}
-.products-cilindro-vietnam {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 0px 57px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-cantil {
-    margin: 20px 0px;
-}
-.img-cantil {
-    margin-top: -260px;
-    margin-right: 175px;
-    text-align: right;
-}
-.products-cantil {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 0px 235px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: right;
-}
-
-.container-continental {
-    margin: 20px 5px;
-
-}
- .img-continental { 
-    margin-top: 150px;
-    margin-left: 212px;
-}
-.products-continental {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 248px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-espira {
-    margin: 20px 120px;
-}
-.img-espira {
-    margin-top: -243px;
-    margin-left: 60px;
-    text-align: center;
-}
-.products-espira {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 8px;
-    margin-left: 55px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-.container-garrafa {
-    margin: 20px 0px;
-}
-.img-garrafa {
-    margin-top: -340px;
-    margin-right: 155px;
-    text-align: right;
-}
-.products-garrafa {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: -10px 235px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: right;
-}
-
-.container-jarro {
-    margin: 20px 10px;
-
-}
- .img-jarro { 
-    margin-top: 150px;
-    margin-left: 220px;
-}
-.products-jarro {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 278px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-spa {
-    margin: 20px 120px;
-}
-.img-spa {
-    margin-top: -243px;
-    margin-left: 80px;
-    text-align: center;
-}
-.products-spa {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 8px;
-    margin-left: 55px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-.container-torre {
-    margin: 20px
-}
-.img-torre {
-    margin-top: -240px;
-    margin-right: 175px;
-    text-align: right;
-}
-.products-torre {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 235px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: right;
-}
-
-.container-pote {
-    margin: 20px 10px;
-
-}
- .img-pote { 
-    margin-top: 150px;
-    margin-left: 220px;
-}
-.products-pote {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 288px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-seat-garden {
-    margin: 20px 120px;
+/*Estilos Globais*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', "Marcellus", "Marcellus SC", sans-serif;
+  background: #f4f4f4;
+}
+
+/*Banner de Produtos*/
+.banner-products {
+  background-image: url(/assets/banner-mid3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 620px;
+  border: none;
+}
+
+.title-products {
+  font-size: 50px;
+  font-family: "Marcellus SC", serif;
+  margin: 20px 0;
+  text-align: center;
+  color: #F6EFDD;
+}
+
+/*Caixa de Informações*/
+.box-list {
+  background-color: #2B4739;
+  width: 900px;
+  height: 300px;
+  opacity: 0.8;
+  margin: 100px auto 0;
+  border-radius: 0 20px 20px 20px;
+  text-align: center;
+}
+
+.dt-mid {
+  font-family: "Marcellus SC", serif;
+  font-size: 25px;
+  font-weight: 800;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  color: #F6EFDD;
+}
+
+.dd-mid {
+  font-family: "Marcellus SC", serif;
+  font-size: 15px;
+  font-weight: 200;
+  padding-top: 25px;
+  color: #F6EFDD;
+}
+
+/* Título e Subtítulo Centrais */
+.title-mid {
+  font-family: "Marcellus SC", serif;
+  font-size: 30px;
+  color: #F6EFDD;
+  text-shadow: 2px 4px 13px #000;
+  opacity: 0.4;
+  padding-bottom: 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-family: "Marcellus SC", serif;
+  text-shadow: 2px 4px 13px #000;
+  color: #F6EFDD;
+  opacity: 0.4;
+  margin-top: -15px;
+}
+
+/*Grade de Produtos*/
+.products-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Cada produto */
+.product {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product:hover {
+  transform: scale(1.03);
+}
+
+.product-img img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
 }
-.img-seat-garden {
-    margin-top: -283px;
-    margin-left: 80px;
-    text-align: center;
-}
-.products-seat-garden {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-left: 80px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-.container-bacia-bergamo {
-    margin: 20px
-}
-.img-bacia-bergamo {
-    margin-top: -240px;
-    margin-right: 175px;
-    text-align: right;
-}
-.products-bacia-bergamo {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 195px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: right;
-}
-
-.container-belga {
-    margin: 20px 10px;
-
-}
- .img-belga { 
-    margin-top: 150px;
-    margin-left: 220px;
-}
-.products-belga {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 300px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-prato {
-    margin: 20px 120px;
-}
-.img-prato {
-    margin-top: -223px;
-    margin-left: 80px;
-    text-align: center;
-}
-.products-prato {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 0px;
-    margin-left: 80px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-.container-bacia-especial {
-    margin: 20px
-}
-.img-bacia-especial {
-    margin-top: -230px;
-    margin-right: 120px;
-    text-align: right;
-}
-.products-bacia-especial {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 175px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: right;
-}
-
-.container-bacia-etiópia {
-    margin: 20px 10px;
-
-}
- .img-bacia-etiópia { 
-    margin-top: 150px;
-    margin-left: 210px;
-}
-.products-bacia-etiópia {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 275px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-egito {
-    margin: 20px 120px;
-}
-.img-egito {
-    margin-top: -273px;
-    margin-left: 80px;
-    text-align: center;
-}
-.products-egito {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 0px;
-    margin-left: 80px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-.container-toscano {
-    margin: 20px
-}
-.img-toscano {
-    margin-top: -320px;
-    margin-right: 150px;
-    text-align: right;
-}
-.products-toscano {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 200px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: right;
-}
-
-.container-espanhol {
-    margin: 20px 10px;
-
-}
- .img-espanhol { 
-    margin-top: 150px;
-    margin-left: 240px;
-}
-.products-espanhol {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 275px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-marrocos {
-    margin: 20px 120px;
-}
-.img-marrocos {
-    margin-top: -298px;
-    margin-left: 80px;
-    text-align: center;
-}
-.products-marrocos {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-left: 80px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-.container-italia {
-    margin: 20px
-}
-.img-italia {
-    margin-top: -260px;
-    margin-right: 135px;
-    text-align: right;
-}
-.products-italia {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 25px 210px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: right;
-}
-
-.container-sao-marino {
-    margin: 20px 10px;
-
-}
- .img-sao-marino { 
-    margin-top: 150px;
-    margin-left: 240px;
-}
-.products-sao-marino {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 287px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-toscano-esfera {
-    margin: 20px 120px;
-}
-.img-toscano-esfera {
-    margin-top: -298px;
-    margin-left: 80px;
-    text-align: center;
-}
-.products-toscano-esfera {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-left: 80px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-.container-tunes {
-    margin: 20px
-}
-.img-tunes {
-    margin-top: -367px;
-    margin-right: 135px;
-    text-align: right;
-}
-.products-tunes {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 0px 200px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: right;
-}
-
-.container-egito-esfera {
-    margin: 20px 10px;
-
-}
- .img-egito-esfera { 
-    margin-top: 150px;
-    margin-left: 240px;
-}
-.products-egito-esfera {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 300px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-bally {
-    margin: 20px
-}
-.img-bally {
-    margin-top: -377px;
-    margin-right: 135px;
-    text-align: right;
-}
-.products-bally {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 0px 195px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: right;
-}
-
-.container-montreal {
-    margin: 20px 120px;
-}
-.img-montreal {
-    margin-top: -388px;
-    margin-left: 80px;
-    text-align: center;
-}
-.products-montreal {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-left: 80px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
-.container-lisboa {
-    margin: 20px 10px;
-
-}
- .img-lisboa { 
-    margin-top: 150px;
-    margin-left: 240px;
-}
-.products-lisboa {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 300px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
-
-.container-provenca {
-    margin: 20px 120px;
-}
-.img-provenca {
-    margin-top: -328px;
-    margin-left: 80px;
-    text-align: center;
-}
-.products-provenca {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-left: 80px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
 
-.container-real {
-    margin: 20px
-}
-.img-real {
-    margin-top: -344px;
-    margin-right: 130px;
-    text-align: right;
+.product-name {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2B4739;
+  text-transform: uppercase;
 }
-.products-real {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 210px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: right;
-}
 
-.container-sao-marino-com-alca {
-    margin: 20px 10px;
+/*Medidas*/
 
-}
- .img-sao-marino-com-alca { 
-    margin-top: 150px;
-    margin-left: 240px;
-}
-.products-sao-marino-com-alca {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 260px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
 }
 
-.container-medelim {
-    margin: 10px 120px;
+.modal-content {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  animation: fadeIn 0.4s ease;
 }
-.img-medelim {
-    margin-top: -368px;
-    margin-left: 140px;
-    text-align: center;
-}
-.products-medelim {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-left: 140px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
-}
-
 
-.container-atlanta {
-    margin: 20px
+.modal-description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #2B4739;
+  font-family: "Marcellus SC", serif;
+  text-align: center;
 }
-.img-atlanta {
-    margin-top: -364px;
-    margin-right: 130px;
-    text-align: right;
-}
-.products-atlanta {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 185px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: right;
-}
 
-.container-atlanta-com-alca {
-    margin: 20px 10px;
-
-}
- .img-atlanta-com-alca { 
-    margin-top: 150px;
-    margin-left: 250px;
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
-.products-atlanta-com-alca {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 250px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-}
 
-.container-fonte-atlanta {
-    margin: 10px 120px;
-}
-.img-fonte-atlanta {
-    margin-top: -408px;
-    margin-left: 140px;
-    text-align: center;
-}
-.products-fonte-atlanta {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin-top: 0px;
-    margin-left: 150px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: center;
+.close-modal {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
 }
 
-.container-fonte-tunes {
-    margin: 20px
+.close-modal:hover {
+  color: #2B4739;
 }
-.img-fonte-tunes {
-    margin-top: -420px;
-    margin-right: 130px;
-    text-align: right;
-}
-.products-fonte-tunes {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 0px 175px 10px 65px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
-    text-align: right;
-}
 
-.container-cuba {
-    margin: 20px 10px;
-}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
 
- .img-cuba { 
-    margin-top: 150px;
-    margin-left: 250px;
-}
-.products-cuba {
-    color: #2B4739;
-    text-transform: uppercase;
-    font-weight: 500px;
-    font-size: 18px;
-    margin: 10px 410px;
-    line-height: 1.1em;
-    font-family: "Marcellus SC", serif;
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
-
-
-
-
-
-
-

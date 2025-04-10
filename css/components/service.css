@@ -1,0 +1,155 @@
+/* Banner Serviços */
+.banner-service {
+  padding: 80px 20px 40px;
+  background-image: url(/assets/banner-serviços.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.title-service {
+  font-size: 40px;
+  font-family: "Marcellus SC", serif;
+  color: #F6EFDD;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+/* Descrição */
+.description-service {
+  margin: 40px auto 20px;
+  max-width: 1000px;
+  padding: 0 20px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  text-align: center;
+  font-family: "Marcellus SC", serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: #2B4739;
+}
+
+.paragraph-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #2b4739b2;
+}
+
+.black-bold {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2B4739;
+  text-align: center;
+}
+
+.slogan-discreto {
+  font-family: "Marcellus SC", serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  color: #2B4739;
+  margin-top: -10px;
+  opacity: 0.9;
+}
+
+/* Carrossel */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.gallery-wrapper {
+  overflow: hidden;
+  width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+}
+
+.item {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.current-item {
+  opacity: 1;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  font-size: 1.8rem;
+  color: #2B4739;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.arrow-left {
+  left: 15px;
+}
+
+.arrow-right {
+  right: 15px;
+}
+
+/* Navegação por bolinhas */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 25px;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #2B4739;
+}

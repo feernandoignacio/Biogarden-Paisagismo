@@ -1,0 +1,98 @@
+.banner-materials {
+    padding-top: 30px;
+    background-image: url(/assets/banner-materials.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 620px;
+    border: none;
+}
+
+.title-materials {
+    font-size: 50px;
+    font-family: "Marcellus SC", serif;
+    margin: 20px 0;
+    text-align: center;
+    color: #F6EFDD;
+}
+
+.box-materials {
+    text-align: center;
+    background-color: #2B4739;
+    width: 900px;
+    height: 300px;
+    opacity: 0.8;
+    margin: 100px auto 0;
+    border-radius: 0 20px 20px 20px;
+    padding: 30px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-family: "Marcellus SC", serif;
+    font-size: 17px;
+    font-weight: 200;
+    color: #F6EFDD;
+    text-align: center;
+}
+
+.colors,
+.texture {
+    font-size: 50px;
+    font-family: "Marcellus SC", serif;
+    color: #2b4739b2;
+    text-align: center;
+    margin: 50px 0 30px;
+}
+
+/* Grid Paletas e Texturas */
+.wapper-paleta,
+.wapper-materiais {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 30px;
+    justify-items: center;
+}
+
+/* Cards */
+.paleta-de-cores,
+.paleta-de-texture,
+.paleta-de-materiais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 12px;
+    padding: 16px;
+    width: 100%;
+    max-width: 180px;
+    min-height: 240px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagens */
+.paleta,
+.materiais {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Nomes */
+.name-color,
+.name-texture {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "Marcellus SC", serif;
+    color: #333;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

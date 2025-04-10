@@ -1,0 +1,134 @@
+.banner {
+    background-image: url(/assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 652px;
+    border: none;
+}
+
+.box-logo {
+    text-align: center;
+    padding: 6px 0;
+    background: transparent;
+    display: inline;
+}
+
+.title {
+    font-family: "Marcellus SC", serif;
+    font-size: 40px;
+    color: #F6EFDD;
+    text-shadow: 2px 4px 13px #000;
+    opacity: 0.4;
+    padding-top: 80px;
+}
+
+.slogan-top1,
+.slogan-top2 {
+    font-family: "Marcellus SC", serif;
+    font-size: 35px;
+    font-weight: 800;
+    color: #F6EFDD;
+    padding: 0;
+    margin: 0;
+}
+
+.slogan-top1 {
+    margin-top: 120px;
+    padding-top: 90px;
+}
+
+.slogan-top2 {
+    margin-top: 10px;
+}
+
+.text-home {
+    text-align: center;
+    background-color: #2B4739;
+    width: 900px;
+    height: 300px;
+    opacity: 0.8;
+    margin-left: 210px;
+}
+
+.text-home span {
+    font-family: "Marcellus SC", serif;
+    position: relative;
+}
+
+.text-home span::before {
+    content: "";
+    animation: changes 20s infinite;
+}
+
+.text-home span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 10px);
+    height: 100%;
+    right: -10px;
+    background-color: #2B4739;
+    border-left: 2px solid #000;
+    animation: cursor 0.8s infinite, type 20s steps(8) infinite;
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid #000;
+    }
+}
+
+@keyframes type {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 10px);
+    }
+}
+
+@keyframes changes {
+
+    0%,
+    20% {
+        content: "momento";
+    }
+
+    21%,
+    40% {
+        content: "ambiente";
+    }
+
+    41%,
+    60% {
+        content: "espaço";
+    }
+
+    61%,
+    80% {
+        content: "projeto";
+    }
+
+    81%,
+    100% {
+        content: "lar :)";
+    }
+}

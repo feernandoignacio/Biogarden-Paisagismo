@@ -2,714 +2,668 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/components/text.css">
-    <link rel="stylesheet" href="css/components/button.css">
-    <link rel="stylesheet" href="css/components/banner.css">
-    <link rel="stylesheet" href="css/components/reset.css">
-    <link rel="stylesheet" href="css/components/header.css">
-    <link rel="stylesheet" href="css/components/links.css">
-    <link rel="stylesheet" href="css/components/title.css">
-    <link rel="stylesheet" href="css/components/subtitle.css">
-    <link rel="stylesheet" href="css/components/sobre-nos.css">
-    <link rel="stylesheet" href="css/components/products.css">
-    <link rel="stylesheet" href="css/components/logo.css">
-    <link rel="stylesheet" href="css/components/paleta.css">
-    <link rel="stylesheet" href="css/components/wapper.css">
-    <link rel="stylesheet" href="css/components/footer.css">
-    <link rel="stylesheet" href="css/components/slider.css">
-    <link rel="stylesheet" href="css/components/responsividade.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <title>BioGarden</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BioGarden</title>
+
+  <!-- Bootstrap & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/components/reset.css" />
+  <link rel="stylesheet" href="css/components/load.css" />
+  <link rel="stylesheet" href="css/components/nav.css" />
+  <link rel="stylesheet" href="css/components/home.css">
+  <link rel="stylesheet" href="css/components/sobre-nos.css" />
+  <link rel="stylesheet" href="css/components/products.css" />
+  <link rel="stylesheet" href="css/components/Material-e-paletas.css">
+  <link rel="stylesheet" href="css/components/service.css" />
+  <link rel="stylesheet" href="css/components/footer.css" />
+  <link rel="stylesheet" href="css/components/responsividade.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&display=swap" rel="stylesheet" />
 </head>
 
+
 <body>
-    <header class="header">
+  <header class="header">
 
-        <a href="index.html"><img class="icon" src="assets/icon.png"></a>
+    <div id="loading-screen">
+      <img src="assets/file.jpg" alt="Logo da Empresa" id="logo" />
+    </div>
 
-        <nav class="menu-desktop">
-            <a class="link-menu" href="">Sobre Nós</a>
-            <a class="link-menu" href="">Produtos</a>
-            <a class="link-menu" href="">Materiais & Paleta</a>
-            <a class="link-menu" href="">Serviços</a>
-            <a class="button-header" href="">Contato</a>
-        </nav>
-    </header>
+    <a href="#index.html"><img class="icon" src="assets/icon.png"></a>
 
-    <section class="banner">
-        <div class="box-logo">
-            <h1 class="title">BIOGARDEN</h1>
-            <h2 class="subtitle">PAISAGISMO</h2>
-        </div>
+    <nav class="menu-desktop">
+      <a class="link-menu" href="#sobre">Sobre Nós</a>
+      <a class="link-menu" href="#produtos">Produtos</a>
+      <a class="link-menu" href="#materiais">Materiais & Paleta</a>
+      <a class="link-menu" href="#serviços">Serviços</a>
+      <a class="button-header" href="https://wa.me/5519999042258?text=Olá Tudo Bem?! Quero conhecer mais produtos!"
+        target="_blank">Contato</a>
+    </nav>
 
-        <div class="text-home">
-            <p class="slogan-top1">Transforme seu espaço com elegância botânica.</p>
-            <p class="slogan-top2">Inspiração verde em cada vaso, arte em cada <span></span></p>
-        </div>
-    </section>
+    <div class="btn-abrir-menu" id="btn-menu">
+      <i class="bi bi-list"></i>
+    </div>
 
-    <section class="sobre-nos">
-        <h2 class="title -second">Nossa Missão</h2>
 
-        <p class="description-color">Fundada em 2022, a Biogarden nasceu com o propósito de transformar ambientes através da
-            arte da decoração botânica. Nossa missão é trazer a beleza e a serenidade das plantas para cada canto,
-            tornando os espaços mais acolhedores e cheios de vida.
+    <div class="menu-mobile" id="menu-mobile">
+      <div class="btn-fechar">
+        <i class="bi bi-x-lg"></i>
+      </div>
 
-            Valorizamos profundamente o relacionamento com nossos clientes, oferecendo não apenas produtos de alta
-            qualidade, mas também um atendimento personalizado e acompanhamento contínuo para garantir a satisfação
-            completa. Desde opções tradicionais até as mais inovadoras, somos extremamente rigorosos com a qualidade de
-            todos os nossos produtos e serviços.
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#materiais">Materiais & Paleta</a></li>
+          <li><a href="#serviços">Serviços</a></li>
+          <li><a href="https://wa.me/5519999042258?text=Olá Tudo Bem?! Quero conhecer mais produtos!"
+              target="_blank">contato</a></li>
+        </ul>
+      </nav>
 
-            Nossa localização estratégica no Ceasa - Mercado de Flores em Campinas nos permite oferecer uma ampla
-            variedade de composições florais com nossos vasos, além de garantir agilidade na entrega e um serviço
-            completo. Atendemos clientes individuais e empresas em toda a região, levando nosso compromisso com a
-            excelência a cada projeto.
+    </div>
 
-            Na Biogarden, acreditamos que cada detalhe importa e estamos sempre prontos para ajudar nossos clientes a
-            criar ambientes que reflitam sua personalidade e estilo. Venha nos visitar e descubra como podemos
-            transformar o seu espaço com a beleza das plantas.
+    <div class="overlay-menu" id="overlay-menu"></div>
+
+  </header>
+
+
+
+
+  <section id="index.html" class="banner">
+    <div class="box-logo">
+      <h1 class="title">BIOGARDEN</h1>
+      <h2 class="subtitle">PAISAGISMO</h2>
+    </div>
+
+    <div class="text-home">
+      <p class="slogan-top1">Transforme seu espaço com elegância botânica.</p>
+      <p class="slogan-top2">Inspiração verde em cada vaso, arte em cada <span></span></p>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre-nos">
+    <h2 class="title-second">Nossa Missão</h2>
+
+    <section id="text-sobre">
+      <div class="paragraph-block">
+        <p class="p">
+          Fundada em 2022, a Biogarden nasceu com o propósito de transformar ambientes através da arte da decoração
+          botânica.
+          Nossa missão é trazer a beleza e a serenidade das plantas para cada canto, tornando os espaços mais
+          acolhedores e cheios de vida.
         </p>
+      </div>
 
-        <h2 class="title -second">Onde nos encontrar</h2>
-        <p class="text-about -second">Ceasa Campinas-SP, Mercado de flores, BoxS1 e S12</p>
+      <div class="paragraph-block">
+        <p class="p">
+          Valorizamos profundamente o relacionamento com nossos clientes, oferecendo não apenas produtos de alta
+          qualidade,
+          mas também um atendimento personalizado e acompanhamento contínuo para garantir a satisfação completa.
+        </p>
+      </div>
 
-        <article class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2186.2732824399313!2d-47.09956790908681!3d-22.844715464196586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c720319aa64d%3A0x1f6ea963fe13b586!2sMercado%20de%20Flores!5e0!3m2!1spt-BR!2sbr!4v1721096974064!5m2!1spt-BR!2sbr"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </article>
+      <div class="paragraph-block">
+        <p class="p">
+          Nossa localização estratégica no Ceasa - Mercado de Flores em Campinas nos permite oferecer uma ampla
+          variedade de composições florais com nossos vasos,
+          além de garantir agilidade na entrega e um serviço completo.
+        </p>
+      </div>
+
+      <div class="paragraph-block">
+        <p class="p">
+          Na Biogarden, acreditamos que cada detalhe importa e estamos sempre prontos para ajudar nossos clientes a
+          criar ambientes
+          que reflitam sua personalidade e estilo. Venha nos visitar e descubra como podemos transformar o seu espaço
+          com a beleza das plantas.
+        </p>
+      </div>
     </section>
 
-    <section class="banner-products">
-        <h2 class="title-products">Produtos</h2>
-        <div class="box-list">
-            <dl class="text-mid">
-                <dt class="dt-mid">Por que Escolher Biogarden? Descubra a perfeição em qualidade, design sustentável e
-                    beleza exclusiva,
-                    garantindo o melhor para o seu espaço!
-                </dt>
-                <dd class="dd-mid">Compromisso com a Qualidade: Materiais duráveis e sustentáveis, garantindo produtos
-                    de alto padrão.</dd>
 
-                <dd class="dd-mid">Compromisso Duradouro: Construindo relações sólidas com nossos clientes.</dd>
-            </dl>
+    <h2 id="onde-encontrar" class="title-second">Onde nos encontrar</h2>
+    <p class="text-about -second">Ceasa Campinas-SP, Mercado de flores, BoxS1 e S12</p>
 
-            <div class="logo-mid">
-                <h1 class="title-mid">BIOGARDEN</h1>
-                <h2 class="subtitle">PAISAGISMO</h2>
-            </div>
-        </div>
-    </section>
+    <article class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2186.2732824399313!2d-47.09956790908681!3d-22.844715464196586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c720319aa64d%3A0x1f6ea963fe13b586!2sMercado%20de%20Flores!5e0!3m2!1spt-BR!2sbr!4v1721096974064!5m2!1spt-BR!2sbr"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
+  </section>
 
-    <div class="wapper-products">
-        <section class="products">
-            <dl class="container">
-                <dd class="img-products"><img src="assets/products/Bacia Adenium.png" alt="Bacia Adenium"></dd>
-                <dt class="products-name">Bacia Adenium </dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-mid">
-                <dd class="img-mid"><img src="assets/products/Bacia Japonesa.png" alt="Bacia Japonesa"></dd>
-                <dt class="products-mid">Bacia Japonesa </dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-right">
-                <dd class="img-right"><img src="assets/products/Jardineira Cuia.png" alt="Jardineira Cuia"></dd>
-                <dt class="products-right">Jardineira Cuia </dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-gominha">
-                <dd class="img-Gominha"><img src="assets/products/Gominha.png" alt="gominha"></dd>
-                <dt class="products-gominha">Gominha</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-cachepot-americano">
-                <dd class="img-cachepot-americano"><img src="assets/products/Cachepot Americano.png"
-                        alt="cachepot-americano"></dd>
-                <dt class="products-cachepot-americano">Cachepot Americano</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-palla">
-                <dd class="img-palla"><img src="assets/products/Palla.png" alt="palla"></dd>
-                <dt class="products-palla">Palla</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-trivial">
-                <dd class="img-trivial"><img src="assets/products/Trivial.png" alt="trivial"></dd>
-                <dt class="products-trivial">Trivial</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-pezinho">
-                <dd class="img-pezinho"><img src="assets/products/Pezinho.png" alt="pezinho"></dd>
-                <dt class="products-pezinho">Pezinho</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-cachepot-bally">
-                <dd class="img-cachepot-bally"><img src="assets/products/Cachepot Bally.png" alt="cachepot-bally"></dd>
-                <dt class="products-cachepot-bally">Cachepot-Bally</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-cachepot-bola">
-                <dd class="img-cachepot-bola"><img src="assets/products/Cachepot Bola.png" alt="cachepot-bola"></dd>
-                <dt class="products-cachepot-bola">Cachepot Bola</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-cachepot-esfera">
-                <dd class="img-cachepot-esfera"><img src="assets/products/Cachepot Esfera.png" alt="cachepot-esfera"></dd>
-                <dt class="products-cachepot-bola">Cachepot Esfera</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-cilindro-baixo">
-                <dd class="img-cilindro-baixo"><img src="assets/products/Cilindro Baixo.png" alt="cilindro-baixo"></dd>
-                <dt class="products-cilindro-baixo">Cilindro Baixo</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-cilindro-alto">
-                <dd class="img-cilindro-alto"><img src="assets/products/Cilíndro Alto.png" alt="cilindro-alto"></dd>
-                <dt class="products-cilindro-alto">Cilíndro Alto</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-cilindro-esfera">
-                <dd class="img-cilindro-esfera"><img src="assets/products/Cilíndro Esfera.png" alt="cilindro-esfera"></dd>
-                <dt class="products-cilindro-esfera">Cilíndro Esfera</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-cantil">
-                <dd class="img-cantil"><img src="assets/products/Cantil.png" alt="cantil"></dd>
-                <dt class="products-cantil">Cantil</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-continental">
-                <dd class="img-continental"><img src="assets/products/Continental.png" alt="continental"></dd>
-                <dt class="products-continental">Continental</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-espira">
-                <dd class="img-espira"><img src="assets/products/Espiral.png" alt="espira"></dd>
-                <dt class="products-espira">espira</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-garrafa">
-                <dd class="img-garrafa"><img src="assets/products/Garrafa.png" alt="garrafa"></dd>
-                <dt class="products-garrafa">Garrafa</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-jarro">
-                <dd class="img-jarro"><img src="assets/products/Jarro.png" alt="jarro"></dd>
-                <dt class="products-jarro">Jarro</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-spa">
-                <dd class="img-spa"><img src="assets/products/Spa.png" alt="spa"></dd>
-                <dt class="products-spa">Spa</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-torre">
-                <dd class="img-torre"><img src="assets/products/Torre.png" alt="torre"></dd>
-                <dt class="products-torre">Torre</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-pote">
-                <dd class="img-pote"><img src="assets/products/Pote.png" alt="pote"></dd>
-                <dt class="products-pote">Pote</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-seat-garden">
-                <dd class="img-seat-garden"><img src="assets/products/Seat Garden.png" alt="seat-garden"></dd>
-                <dt class="products-seat-garden">Seat Garden</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-bacia-bergamo">
-                <dd class="img-bacia-bergamo"><img src="assets/products/Bacia Bérgamo.png" alt="bacia-bergamo"></dd>
-                <dt class="products-bacia-bergamo">Bacia Bérgamo</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-belga">
-                <dd class="img-belga"><img src="assets/products/Belga.png" alt="belga"></dd>
-                <dt class="products-belga">Belga</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-prato">
-                <dd class="img-prato"><img src="assets/products/Prato.png" alt="prato"></dd>
-                <dt class="products-prato">Prato</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-bacia-especial">
-                <dd class="img-bacia-especial"><img src="assets/products/Bacia Especial.png" alt="bacia-especial"></dd>
-                <dt class="products-bacia-especial">Bacia Especial</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-bacia-etiópia">
-                <dd class="img-bacia-etiópia"><img src="assets/products/Bacia Etiópia.png" alt="bacia-etiópia"></dd>
-                <dt class="products-bacia-etiópia">Bacia Etiópia</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-egito">
-                <dd class="img-egito"><img src="assets/products/Egito.png" alt="egito"></dd>
-                <dt class="products-egito">Egito</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-toscano">
-                <dd class="img-toscano"><img src="assets/products/Toscano.png" alt="toscano"></dd>
-                <dt class="products-toscano">Toscano</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-espanhol">
-                <dd class="img-espanhol"><img src="assets/products/Espanhol.png" alt="espanhol"></dd>
-                <dt class="products-espanhol">Espanhol</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-marrocos">
-                <dd class="img-marrocos"><img src="assets/products/Marrocos.png" alt="marrocos"></dd>
-                <dt class="products-marrocos">Marrocos</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-italia">
-                <dd class="img-italia"><img src="assets/products/Itália.png" alt="italia"></dd>
-                <dt class="products-italia">Itália</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-sao-marino">
-                <dd class="img-sao-marino"><img src="assets/products/São Marino.png" alt="sao-marino"></dd>
-                <dt class="products-sao-marino">São Marino</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-toscano-esfera">
-                <dd class="img-toscano-esfera"><img src="assets/products/Toscano Esfera.png" alt="toscano-esfera"></dd>
-                <dt class="products-toscano-esfera">Toscano Esfera</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-tunes">
-                <dd class="img-tunes"><img src="assets/products/Tunes.png" alt="tunes"></dd>
-                <dt class="products-tunes">Tunes</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-egito-esfera">
-                <dd class="img-egito-esfera"><img src="assets/products/Egito Esfera.png" alt="egito-esfera"></dd>
-                <dt class="products-egito-esfera">Egito Esfera</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-bally">
-                <dd class="img-bally"><img src="assets/products/Bally.png" alt="bally"></dd>
-                <dt class="products-bally">Bally</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-montreal">
-                <dd class="img-montreal"><img src="assets/products/Montreal.png" alt="montreal"></dd>
-                <dt class="products-montreal">Montreal</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-lisboa">
-                <dd class="img-lisboa"><img src="assets/products/Lisboa.png" alt="lisboa"></dd>
-                <dt class="products-lisboa">Lisboa</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-provenca">
-                <dd class="img-provenca"><img src="assets/products/Provença.png" alt="provenca"></dd>
-                <dt class="products-provenca">Provença</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-real">
-                <dd class="img-real"><img src="assets/products/Real.png" alt="real"></dd>
-                <dt class="products-real">Real</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-sao-marino-com-alca">
-                <dd class="img-sao-marino-com-alca"><img src="assets/products/São Marino com Alça.png"
-                        alt="sao-marino-com-alca"></dd>
-                <dt class="products-sao-marino-com-alca">São Marino com Alça</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-medelim">
-                <dd class="img-medelim"><img src="assets/products/Medelim.png" alt="medelim"></dd>
-                <dt class="products-medelim">Medelim</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-atlanta">
-                <dd class="img-atlanta"><img src="assets/products/Atlanta.png" alt="atlanta"></dd>
-                <dt class="products-atlanta">Atlanta</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-atlanta-com-alca">
-                <dd class="img-atlanta-com-alca"><img src="assets/products/Atlanta com alça.png" alt="atlanta-com-alca">
-                </dd>
-                <dt class="products-atlanta-com-alca">Atlanta com alça</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-fonte-atlanta">
-                <dd class="img-fonte-atlanta"><img src="assets/products/Fonte Atlanta.png" alt="fonte-atlanta"></dd>
-                <dt class="products-fonte-atlanta">Fonte Atlanta</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-fonte-tunes">
-                <dd class="img-fonte-tunes"><img src="assets/products/Fonte Tunes.png" alt="fonte-tunes"></dd>
-                <dt class="products-fonte-tunes">Fonte Tunes</dt>
-            </dl>
-        </section>
-    
-        <section class="products">
-            <dl class="container-cuba">
-                <dd class="img-cuba"><img src="assets/products/Cuba.png" alt="cuba"></dd>
-                <dt class="products-cuba">Cuba</dt>
-            </dl>
-        </section>
-    
-    
-    
-    
-    
-    
+  <section class="banner-products">
+    <h2 id="produtos" class="title-products">Produtos</h2>
+    <div class="box-list">
+      <dl class="text-mid">
+        <dt class="dt-mid">Por que Escolher Biogarden? Descubra a perfeição em qualidade, design sustentável e
+          beleza exclusiva,
+          garantindo o melhor para o seu espaço!
+        </dt>
+        <dd class="dd-mid">Compromisso com a Qualidade: Materiais duráveis e sustentáveis, garantindo produtos
+          de alto padrão.</dd>
 
-    <section class="banner-materials">
-        <h2 class="title-materials">Materiais & Paleta</h2>
-        <div class="box-materials">
-            <dl class="text-mid">
-                <dt class="description">Um vaso bem escolhido não é apenas um recipiente para uma planta; ele é uma
-                    peça que acrescenta um toque significativo ao ambiente.
-                    A cor e a textura do vaso podem transformar completamente a atmosfera de um espaço.
-                    Um vaso de cerâmica com um acabamento rústico pode evocar uma sensação acolhedora e tradicional,
-                    enquanto um vaso texturizado com um design moderno pode adicionar um toque de contemporaneidade e
-                    elegância.
-                    Além disso, o tamanho e a forma do vaso podem influenciar a percepção do espaço, tornando-o mais
-                    amplo ou mais intimista. Assim, escolher o vaso certo não é apenas uma questão de estética, mas
-                    também de criar uma harmonia visual que complementa a planta e o ambiente como um todo.
-                </dt>
-            </dl>
-            <div class="logo-mid">
-                <h1 class="title-mid">BIOGARDEN</h1>
-                <h2 class="subtitle">PAISAGISMO</h2>
-            </div>
-        </div>
-    </section>
+        <dd class="dd-mid">Compromisso Duradouro: Construindo relações sólidas com nossos clientes.</dd>
+      </dl>
 
-    <section class="Materiais & Paleta">
-        <h1 class="colors">Paleta de Cores</h1>
+      <div class="logo-mid">
+        <h1 id="logo-mid" class="title-mid">BIOGARDEN</h1>
+        <h2 id="sublogo-mid" class="subtitle">PAISAGISMO</h2>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal-content">
+      <span class="close-modal" id="close-modal">&times;</span>
+      <img id="modal-image" src="" alt="Medidas do Produto">
+      <p id="modal-description" class="modal-description"></p>
+    </div>
+  </div>
+
+  <section class="products-grid">
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Bacia Adenium.png" alt="Bacia Adenium"></dd>
+      <dt class="product-name">Bacia Adenium</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Bacia Japonesa.png" alt="Bacia Japonesa"></dd>
+      <dt class="product-name">Bacia Japonesa</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Jardineira Cuia.png" alt="Jardineira Cuia"></dd>
+      <dt class="product-name">Jardineira Cuia</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Gominha.png" alt="Gominha"></dd>
+      <dt class="product-name">Gominha</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Cachepot Americano.png" alt="Cachepot Americano"></dd>
+      <dt class="product-name">Cachepot Americano</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Palla.png" alt="Palla"></dd>
+      <dt class="product-name">Palla</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Trivial.png" alt="Trivial"></dd>
+      <dt class="product-name">Trivial</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Pezinho.png" alt="Pezinho"></dd>
+      <dt class="product-name">Pezinho</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Cachepot Bally.png" alt="Cachepot Bally"></dd>
+      <dt class="product-name">Cachepot Bally</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Cachepot Bola.png" alt="Cachepot Bola"></dd>
+      <dt class="product-name">Cachepot Bola</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Cachepot Esfera.png" alt="Cachepot Esfera"></dd>
+      <dt class="product-name">Cachepot Esfera</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Cilindro Baixo.png" alt="Cilindro Baixo"></dd>
+      <dt class="product-name">Cilindro Baixo</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Cilíndro Alto.png" alt="Cilíndro Alto"></dd>
+      <dt class="product-name">Cilíndro Alto</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Cilíndro Esfera.png" alt="Cilíndro Esfera"></dd>
+      <dt class="product-name">Cilíndro Esfera</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Cantil.png" alt="Cantil"></dd>
+      <dt class="product-name">Cantil</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Continental.png" alt="Continental"></dd>
+      <dt class="product-name">Continental</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Espiral.png" alt="Espiral"></dd>
+      <dt class="product-name">Espiral</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Garrafa.png" alt="Garrafa"></dd>
+      <dt class="product-name">Garrafa</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Jarro.png" alt="Jarro"></dd>
+      <dt class="product-name">Jarro</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Spa.png" alt="Spa"></dd>
+      <dt class="product-name">Spa</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Torre.png" alt="Torre"></dd>
+      <dt class="product-name">Torre</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Pote.png" alt="Pote"></dd>
+      <dt class="product-name">Pote</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Seat Garden.png" alt="Seat Garden"></dd>
+      <dt class="product-name">Seat Garden</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Bacia Bérgamo.png" alt="Bacia Bérgamo"></dd>
+      <dt class="product-name">Bacia Bérgamo</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Belga.png" alt="Belga"></dd>
+      <dt class="product-name">Belga</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Prato.png" alt="Prato"></dd>
+      <dt class="product-name">Prato</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Bacia Especial.png" alt="Bacia Especial"></dd>
+      <dt class="product-name">Bacia Especial</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Bacia Etiópia.png" alt="Bacia Etiópia"></dd>
+      <dt class="product-name">Bacia Etiópia</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Egito.png" alt="Egito"></dd>
+      <dt class="product-name">Egito</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Toscano.png" alt="Toscano"></dd>
+      <dt class="product-name">Toscano</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Espanhol.png" alt="Espanhol"></dd>
+      <dt class="product-name">Espanhol</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Marrocos.png" alt="Marrocos"></dd>
+      <dt class="product-name">Marrocos</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Itália.png" alt="Itália"></dd>
+      <dt class="product-name">Itália</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/São Marino.png" alt="São Marino"></dd>
+      <dt class="product-name">São Marino</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Toscano Esfera.png" alt="Toscano Esfera"></dd>
+      <dt class="product-name">Toscano Esfera</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Tunes.png" alt="Tunes"></dd>
+      <dt class="product-name">Tunes</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Egito Esfera.png" alt="Egito Esfera"></dd>
+      <dt class="product-name">Egito Esfera</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Bally.png" alt="Bally"></dd>
+      <dt class="product-name">Bally</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Montreal.png" alt="Montreal"></dd>
+      <dt class="product-name">Montreal</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Lisboa.png" alt="Lisboa"></dd>
+      <dt class="product-name">Lisboa</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Provença.png" alt="Provença"></dd>
+      <dt class="product-name">Provença</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Real.png" alt="Real"></dd>
+      <dt class="product-name">Real</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/São Marino com Alça.png" alt="São Marino com Alça"></dd>
+      <dt class="product-name">São Marino com Alça</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Medelim.png" alt="Medelim"></dd>
+      <dt class="product-name">Medelim</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Atlanta.png" alt="Atlanta"></dd>
+      <dt class="product-name">Atlanta</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Atlanta com alça.png" alt="Atlanta com alça"></dd>
+      <dt class="product-name">Atlanta com alça</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Fonte Atlanta.png" alt="Fonte Atlanta"></dd>
+      <dt class="product-name">Fonte Atlanta</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Fonte Tunes.png" alt="Fonte Tunes"></dd>
+      <dt class="product-name">Fonte Tunes</dt>
+    </dl>
+    <dl class="product">
+      <dd class="product-img"><img src="assets/products/Cuba.png" alt="Cuba"></dd>
+      <dt class="product-name">Cuba</dt>
+    </dl>
+  </section>
+
+
+
+
+
+
+
+  <section class="banner-materials">
+    <h2 id="materiais" class="title-materials">Materiais & Paleta</h2>
+    <div class="box-materials">
+      <dl class="text-mid">
+        <dt class="description">Um vaso bem escolhido não é apenas um recipiente para uma planta; ele é uma
+          peça que acrescenta um toque significativo ao ambiente.
+          A cor e a textura do vaso podem transformar completamente a atmosfera de um espaço.
+          Um vaso de cerâmica com um acabamento rústico pode evocar uma sensação acolhedora e tradicional,
+          enquanto um vaso texturizado com um design moderno pode adicionar um toque de contemporaneidade e
+          elegância.
+          Além disso, o tamanho e a forma do vaso podem influenciar a percepção do espaço, tornando-o mais
+          amplo ou mais intimista. Assim, escolher o vaso certo não é apenas uma questão de estética, mas
+          também de criar uma harmonia visual que complementa a planta e o ambiente como um todo.
+        </dt>
+      </dl>
+      <div class="logo-mid">
+        <h1 class="title-mid">BIOGARDEN</h1>
+        <h2 class="subtitle">PAISAGISMO</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="Materiais & Paleta">
+    <h1 class="colors">Paleta de Cores</h1>
 
     <div class="wapper-paleta">
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Dourado Mate.png" alt="paleta-cores">
-            <h2 class="name-color">Dourado Mate</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Preto.png" alt="paleta-cores">
-            <h2 class="name-color">Preto</h2>
-        </figure>
-        <figure class="paleta-de-cores">
-            <img class="paleta" src="assets/paleta/Ródio.png" alt="paleta-cores">
-            <h2 class="name-color">Ródio</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Musgo.png" alt="paleta-cores">
-            <h2 class="name-color">Musgo</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Azul Mescla.png" alt="paleta-cores">
-            <h2 class="name-color">Azul Mescla</h2>
-        </figure>
-        <figure class="paleta-de-cores">
-            <img class="paleta" src="assets/paleta/Azul Petróleo.png" alt="paleta-cores">
-            <h2 class="name-color">Azul Petróleo</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Azul Celeste.png" alt="paleta-cores">
-            <h2 class="name-color">Azul Celeste</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Verde Madeira.png" alt="paleta-cores">
-            <h2 class="name-color">Verde Madeira</h2>
-        </figure>
-        <figure class="paleta-de-cores">
-            <img class="paleta" src="assets/paleta/Verde.png" alt="paleta-cores">
-            <h2 class="name-color">Verde</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Jade.png" alt="paleta-cores">
-            <h2 class="name-color">Jade</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Turqueza.png" alt="paleta-cores">
-            <h2 class="name-color">Turqueza</h2>
-        </figure>
-        <figure class="paleta-de-cores">
-            <img class="paleta" src="assets/paleta/Verde Ruby.png" alt="paleta-cores">
-            <h2 class="name-color">Verde Ruby</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Bambu.png" alt="paleta-cores">
-            <h2 class="name-color">Bambu</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Amarelo.png" alt="paleta-cores">
-            <h2 class="name-color">Amarelo</h2>
-        </figure>
-        <figure class="paleta-de-cores">
-            <img class="paleta" src="assets/paleta/Vermelho.png " alt="paleta-cores">
-            <h2 class="name-color">Vermelho</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Laranja Fogo.png" alt="paleta-cores">
-            <h2 class="name-color">Laranja Fogo</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Perola.png" alt="paleta-cores">
-            <h2 class="name-color">Perola</h2>
-        </figure>
-        <figure class="paleta-de-cores">
-            <img class="paleta" src="assets/paleta/Bege Rustico.png" alt="paleta-cores">
-            <h2 class="name-color">Bege Rustico</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Due.png" alt="paleta-cores">
-            <h2 class="name-color">Due</h2>
-        </figure>
-        <figure class="paleta-de-cores -space">
-            <img class="paleta" src="assets/paleta/Cobre.png" alt="paleta-cores">
-            <h2 class="name-color">Cobre</h2>
-        </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Dourado Mate.png" alt="paleta-cores">
+        <h2 class="name-color">Dourado Mate</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Preto.png" alt="paleta-cores">
+        <h2 class="name-color">Preto</h2>
+      </figure>
+      <figure class="paleta-de-cores">
+        <img class="paleta" src="assets/paleta/Ródio.png" alt="paleta-cores">
+        <h2 class="name-color">Ródio</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Musgo.png" alt="paleta-cores">
+        <h2 class="name-color">Musgo</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Azul Mescla.png" alt="paleta-cores">
+        <h2 class="name-color">Azul Mescla</h2>
+      </figure>
+      <figure class="paleta-de-cores">
+        <img class="paleta" src="assets/paleta/Azul Petróleo.png" alt="paleta-cores">
+        <h2 class="name-color">Azul Petróleo</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Azul Celeste.png" alt="paleta-cores">
+        <h2 class="name-color">Azul Celeste</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Verde Madeira.png" alt="paleta-cores">
+        <h2 class="name-color">Verde Madeira</h2>
+      </figure>
+      <figure class="paleta-de-cores">
+        <img class="paleta" src="assets/paleta/Verde.png" alt="paleta-cores">
+        <h2 class="name-color">Verde</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Jade.png" alt="paleta-cores">
+        <h2 class="name-color">Jade</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Turqueza.png" alt="paleta-cores">
+        <h2 class="name-color">Turqueza</h2>
+      </figure>
+      <figure class="paleta-de-cores">
+        <img class="paleta" src="assets/paleta/Verde Ruby.png" alt="paleta-cores">
+        <h2 class="name-color">Verde Ruby</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Bambu.png" alt="paleta-cores">
+        <h2 class="name-color">Bambu</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Amarelo.png" alt="paleta-cores">
+        <h2 class="name-color">Amarelo</h2>
+      </figure>
+      <figure class="paleta-de-cores">
+        <img class="paleta" src="assets/paleta/Vermelho.png " alt="paleta-cores">
+        <h2 class="name-color">Vermelho</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Laranja Fogo.png" alt="paleta-cores">
+        <h2 class="name-color">Laranja Fogo</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Perola.png" alt="paleta-cores">
+        <h2 class="name-color">Perola</h2>
+      </figure>
+      <figure class="paleta-de-cores">
+        <img class="paleta" src="assets/paleta/Bege Rustico.png" alt="paleta-cores">
+        <h2 class="name-color">Bege Rustico</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Due.png" alt="paleta-cores">
+        <h2 class="name-color">Due</h2>
+      </figure>
+      <figure class="paleta-de-cores -space">
+        <img class="paleta" src="assets/paleta/Cobre.png" alt="paleta-cores">
+        <h2 class="name-color">Cobre</h2>
+      </figure>
     </div>
- </section>
+  </section>
 
 
- <section class="Materiais & Paleta">
+  <section class="Materiais & Paleta">
     <h1 class="texture">Materiais</h1>
 
-<div class="wapper-materiais">
-    <figure class="paleta-de-texture">
+    <div class="wapper-materiais">
+      <figure class="paleta-de-texture">
         <img class="materiais" src="assets/texture/Ônix.png" alt="paleta-materiais">
         <h2 class="name-texture">Ônix</h2>
-    </figure>
-    <figure class="paleta-de-texture">
+      </figure>
+      <figure class="paleta-de-texture">
         <img class="materiais" src="assets/texture/Mediterrâneo-Beige.png" alt="paleta-materiais">
         <h2 class="name-texture">Mediterrâneo Beige</h2>
-    </figure>
-    <figure class="paleta-de-texture">
+      </figure>
+      <figure class="paleta-de-texture">
         <img class="materiais" src="assets/texture/Ancient Orange.png" alt="paleta-materiais">
         <h2 class="name-texture">Ancient Orange</h2>
-    </figure>
-    <figure class="paleta-de-texture">
+      </figure>
+      <figure class="paleta-de-texture">
         <img class="materiais" src="assets/texture/Ancient Camaleon.png" alt="paleta-materiais">
         <h2 class="name-texture">Ancient Camaleon</h2>
-    </figure>
-    <figure class="paleta-de-texture">
+      </figure>
+      <figure class="paleta-de-texture">
         <img class="materiais" src="assets/texture/Ancient Turmalina.png" alt="paleta-materiais">
         <h2 class="name-texture">Ancient Turmalina</h2>
-    </figure>
-    <figure class="paleta-de-texture">
+      </figure>
+      <figure class="paleta-de-texture">
         <img class="materiais" src="assets/texture/Coral-White.png" alt="paleta-materiais">
         <h2 class="name-texture">Coral White</h2>
-    </figure>
-    <figure class="paleta-de-texture">
+      </figure>
+      <figure class="paleta-de-texture">
         <img class="materiais" src="assets/texture/Ancient Blue.png" alt="paleta-materiais">
         <h2 class="name-texture">Ancient Blue</h2>
-    </figure>
-    <figure class="paleta-de-texture">
+      </figure>
+      <figure class="paleta-de-texture">
         <img class="materiais" src="assets/texture/Ancient Brow.png" alt="paleta-materiais">
         <h2 class="name-texture">Ancient Brow</h2>
-    </figure>
-    <figure class="paleta-de-texture">
+      </figure>
+      <figure class="paleta-de-texture">
         <img class="materiais" src="assets/texture/Ancient Peacock.png" alt="paleta-materiais">
         <h2 class="name-texture">Ancient Peacock</h2>
-    </figure>
-    <figure class="paleta-de-texture">
+      </figure>
+      <figure class="paleta-de-texture">
         <img class="materiais" src="assets/texture/Coral-Black.png" alt="paleta-materiais">
         <h2 class="name-texture">Coral Black</h2>
-    </figure>
-    <figure class="paleta-de-materiais">
+      </figure>
+      <figure class="paleta-de-materiais">
         <img class="materiais" src="assets/texture/Ancient Green.png" alt="paleta-materiais">
         <h2 class="name-texture">Ancient Green</h2>
-    </figure>
-</div>
-</section>
+      </figure>
+    </div>
+  </section>
 
-<section class="banner-service">
-    <h2 class="title-service">Serviços</h2>
-    
-</section>
+  <section class="banner-service">
+    <h2 id="serviços" class="title-service">Serviços</h2>
+  </section>
+
+  <section class="service">
+
+    <div class="description-service">
+
+      <div class="paragraph-block">
+        <h3 class="black-bold">Venda de Vasos de Plantas</h3>
+        <p>Nossa seleção de vasos é cuidadosamente escolhida para atender a todos os estilos e necessidades. Desde os
+          clássicos até
+          os modernos e inovadores, temos opções que complementam qualquer ambiente, seja em casa ou no escritório.</p>
+      </div>
+
+      <div class="paragraph-block">
+        <h3 class="black-bold">Montagem de Vasos</h3>
+        <p>Contamos com uma equipe especializada na montagem de vasos, garantindo que suas plantas sejam dispostas de
+          forma
+          esteticamente agradável e funcional. A montagem é feita levando em consideração o espaço disponível e as
+          necessidades
+          específicas das plantas.</p>
+      </div>
+
+      <div class="paragraph-block">
+        <h3 class="black-bold">Paisagismo Personalizado</h3>
+        <p>Nosso serviço de paisagismo é ideal para quem deseja transformar seu jardim, terraço ou área externa em um
+          verdadeiro
+          paraíso verde. Criamos projetos personalizados que harmonizam plantas, vasos e elementos decorativos, criando
+          espaços
+          que inspiram tranquilidade e bem-estar.</p>
+      </div>
+
+      <div class="paragraph-block">
+        <h3 class="black-bold">Visitas Técnicas e Assistência Especializada</h3>
+        <p>Para garantir que suas plantas estejam sempre saudáveis e bonitas, oferecemos visitas técnicas periódicas e
+          assistência
+          especializada. Nossos especialistas estão disponíveis para orientar sobre cuidados, podas, troca de vasos e
+          tudo mais
+          que suas plantas precisarem para prosperar.</p>
+      </div>
+
+      <div class="paragraph-block">
+        <h3 class="black-bold">Por que Escolher a Biogarden?</h3>
+        <p>Além da qualidade de nossos produtos e serviços, destacamo-nos pelo compromisso com a satisfação dos
+          clientes.
+          Valorizamos cada projeto como único e buscamos sempre superar expectativas, criando ambientes que refletem
+          personalidade
+          e estilo.</p>
+      </div>
+
+      <p>Explore nosso site para saber mais sobre nossos produtos e serviços, e não hesite em nos contatar para agendar
+        uma
+        consulta ou tirar dúvidas. Estamos aqui para ajudar você a transformar seus espaços com muito verde e beleza!
+      </p>
+      <p class="slogan-discreto"><strong>Transforme seu ambiente, transforme sua vida com a Biogarden!</strong></p>
 
 
-<section class="service">
 
-
-
-    <p class="description-color">Aqui na Biogarden, não apenas vendemos vasos de plantas, mas também oferecemos uma gama completa de serviços para
-    transformar seus espaços em verdadeiros oásis verdes.
-    
-    <b class="black-bold">Venda de Vasos de Plantas:</b>
-    Nossa seleção de vasos é cuidadosamente escolhida para atender a todos os estilos e necessidades. Desde os clássicos até
-    os modernos e inovadores, temos opções que complementam qualquer ambiente, seja em casa ou no escritório.
-    
-    <b class="black-bold">Montagem de Vasos:</b>
-    Contamos com uma equipe especializada na montagem de vasos, garantindo que suas plantas sejam dispostas de forma
-    esteticamente agradável e funcional. A montagem é feita levando em consideração o espaço disponível e as necessidades
-    específicas das plantas.
-    
-    <b class="black-bold">Paisagismo Personalizado:</b>
-    Nosso serviço de paisagismo é ideal para quem deseja transformar seu jardim, terraço ou área externa em um verdadeiro
-    paraíso verde. Criamos projetos personalizados que harmonizam plantas, vasos e elementos decorativos, criando espaços
-    que inspiram tranquilidade e bem-estar.
-    
-    <b class="black-bold">Visitas Técnicas e Assistência Especializada:</b>
-    Para garantir que suas plantas estejam sempre saudáveis e bonitas, oferecemos visitas técnicas periódicas e assistência
-    especializada. Nossos especialistas estão disponíveis para orientar sobre cuidados, podas, troca de vasos e tudo mais
-    que suas plantas precisarem para prosperar.
-    
-    <b class="black-bold">Por que Escolher a Biogarden?</b>
-    Além da qualidade de nossos produtos e serviços, destacamo-nos pelo compromisso com a satisfação dos clientes.
-    Valorizamos cada projeto como único e buscamos sempre superar expectativas, criando ambientes que refletem personalidade
-    e estilo.
-    
-    Explore nosso site para saber mais sobre nossos produtos e serviços, e não hesite em nos contatar para agendar uma
-    consulta ou tirar dúvidas. Estamos aqui para ajudar você a transformar seus espaços com muito verde e beleza!
-    
-    
-    Transforme seu ambiente, transforme sua vida com a Biogarden!
-    </p>
-
-    <div class="slider-container">
-        <button class="arrow-left control" aria-label="Previous image">◀</button>
-        <button class="arrow-right control" aria-label="Next Image">▶</button>
-       <div class="gallery-wrapper">
-        <div class="gallery">
-            <img class="item current-item" src="assets/slide1.jpg" alt="slide1">
-            <img class="item " src="assets/slide2.jpg" alt="slide2">
-            <img class="item " src="assets/slide3.jpg" alt="slide3">
-            <img class="item " src="assets/slide4.jpg" alt="slide4">
-            <img class="item " src="assets/slide5.jpg" alt="slide5">
-            <img class="item " src="assets/slide6.jpg" alt="slide6">
-            <img class="item " src="assets/slide7.jpg" alt="slide7">
-            <img class="item " src="assets/slide8.jpg" alt="slide8">
-            <img class="item " src="assets/slide9.jpg" alt="slide9">
-            <img class="item " src="assets/slide10.jpg" alt="slide10">
-        </div>
-       </div> 
     </div>
 
 
-</section>
+
+    <div class="slider-container">
+      <button class="arrow-left control" aria-label="Imagem anterior">
+        <span>&#10094;</span>
+      </button>
+      <button class="arrow-right control" aria-label="Próxima imagem">
+        <span>&#10095;</span>
+      </button>
+
+      <div class="gallery-wrapper">
+        <div class="gallery">
+          <img class="item current-item" src="assets/slide1.jpg" alt="slide1">
+          <img class="item" src="assets/slide2.jpg" alt="slide2">
+          <img class="item" src="assets/slide3.jpg" alt="slide3">
+          <img class="item" src="assets/slide4.jpg" alt="slide4">
+          <img class="item" src="assets/slide5.jpg" alt="slide5">
+          <img class="item" src="assets/slide6.jpg" alt="slide6">
+          <img class="item" src="assets/slide7.jpg" alt="slide7">
+          <img class="item" src="assets/slide8.jpg" alt="slide8">
+          <img class="item" src="assets/slide9.jpg" alt="slide9">
+          <img class="item" src="assets/slide10.jpg" alt="slide10">
+        </div>
+      </div>
+
+      <div class="dots"></div>
+    </div>
+  </section>
 
 
-    <footer class="footer">
-        <h2 class="contact">Contato</h2>
-        <ol>
-            <li class="info">Loja: Ceasa Campinas-SP, Mercado de flores, BoxS1 e S12</li>
-            <li class="info">Telefones/WhatsApp:(19) 99904-2258</li>
-            <li class="info">email: biogardenp@gmail.com</li>
-            <li class="info">Horário de funcionamento: Seguda a sexta, das 8:00 as 16:30</li>
-        </ol>
+  <footer class="footer">
+    <h2 class="contact">Contato</h2>
+    <ol>
+      <li class="info">Loja: Ceasa Campinas-SP, Mercado de flores, BoxS1 e S12</li>
+      <li class="info">Telefones/WhatsApp: (19) 99904-2258</li>
+      <li class="info">email: biogardenp@gmail.com</li>
+      <li class="info">Horário de funcionamento: Seguda a sexta, das 8:00 as 16:30</li>
+    </ol>
 
-    <a class="button-footer" href="">Contato</a>
+    <div class="footer-icons">
+      <a class="footer-icon" href="https://wa.me/5519999042258?text=Olá Tudo Bem?! Quero conhecer mais produtos!"
+        target="_blank" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
 
-    </footer>
+      <a class="footer-icon" href="https://www.instagram.com/biogardenp/" target="_blank" aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+  </footer>
 
 
 
 
-
-
-
-    <script src="js/components/menu.js"></script>
-    <script src="js/components/slide.js"></script>
+  <!-- Scripts -->
+  <script src="js/Produtos-medidas.js"></script>
+  <script src="js/components/menu.js"></script>
+  <script src="js/components/slide.js"></script>
+  <script src="js/components/load.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,34 +1,85 @@
-const controls = document.querySelectorAll(".control");
-let currentItem = 0;
-const items = document.querySelectorAll(".item");
-const maxItems = items.length;
+const gallery = document.querySelector(".gallery");
+const slides = document.querySelectorAll(".item");
+const btnLeft = document.querySelector(".arrow-left");
+const btnRight = document.querySelector(".arrow-right");
+const dotsContainer = document.querySelector(".dots");
 
-controls.forEach((control) => {
-  control.addEventListener("click", (e) => {
-    isLeft = e.target.classList.contains("arrow-left");
+let currentIndex = 0;
+let startX = 0;
+let isDragging = false;
 
-    if (isLeft) {
-      currentItem -= 1;
-    } else {
-      currentItem += 1;
-    }
 
-    if (currentItem >= maxItems) {
-      currentItem = 0;
-    }
-
-    if (currentItem < 0) {
-      currentItem = maxItems - 1;
-    }
-
-    items.forEach((item) => item.classList.remove("current-item"));
-
-    items[currentItem].scrollIntoView({
-      inline: "center"
-    });
-
-    items[currentItem].classList.add("current-item");
+slides.forEach((_, index) => {
+  const dot = document.createElement("span");
+  dot.classList.add("dot");
+  if (index === 0) dot.classList.add("active");
+  dot.addEventListener("click", (e) => {
+    e.preventDefault();
+    goToSlide(index);
   });
+  dotsContainer.appendChild(dot);
 });
 
+const dots = document.querySelectorAll(".dot");
 
+function updateSlidePosition() {
+  slides.forEach(slide => slide.classList.remove("current-item"));
+  slides[currentIndex].classList.add("current-item");
+
+  dots.forEach(dot => dot.classList.remove("active"));
+  dots[currentIndex].classList.add("active");
+
+  slides[currentIndex].scrollIntoView({
+  behavior: "smooth",
+  inline: "center",
+  block: "nearest"
+});
+  
+}
+
+function goToSlide(index) {
+  currentIndex = index;
+  updateSlidePosition();
+}
+
+btnLeft.addEventListener("click", (e) => {
+  e.preventDefault(); 
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  updateSlidePosition();
+});
+
+btnRight.addEventListener("click", (e) => {
+  e.preventDefault(); 
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateSlidePosition();
+});
+
+/*Swipe (arrastar com o dedo)*/
+gallery.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+  isDragging = true;
+});
+
+gallery.addEventListener("touchmove", (e) => {
+  if (!isDragging) return;
+  const moveX = e.touches[0].clientX;
+  const diff = startX - moveX;
+
+  if (Math.abs(diff) > 50) {
+    if (diff > 0) {
+      currentIndex = (currentIndex + 1) % slides.length;
+    } else {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    }
+    updateSlidePosition();
+    isDragging = false;
+  }
+});
+
+gallery.addEventListener("touchend", () => {
+  isDragging = false;
+});
+
+window.addEventListener("resize", () => {
+  updateSlidePosition();
+});
