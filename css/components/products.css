@@ -8,7 +8,7 @@ body {
 
 /*Banner de Produtos*/
 .banner-products {
-  background-image: url(/assets/banner-mid3.jpg);
+  background-image: url(../../assets/banner-mid3.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 620px;

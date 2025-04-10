@@ -1,7 +1,7 @@
 /* Banner Serviços */
 .banner-service {
   padding: 80px 20px 40px;
-  background-image: url(/assets/banner-serviços.jpg);
+  background-image: url(../../assets/banner-serviços.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
