@@ -8,7 +8,6 @@ let currentIndex = 0;
 let startX = 0;
 let isDragging = false;
 
-
 slides.forEach((_, index) => {
   const dot = document.createElement("span");
   dot.classList.add("dot");
@@ -29,12 +28,9 @@ function updateSlidePosition() {
   dots.forEach(dot => dot.classList.remove("active"));
   dots[currentIndex].classList.add("active");
 
-  slides[currentIndex].scrollIntoView({
-  behavior: "smooth",
-  inline: "center",
-  block: "nearest"
-});
   
+  const offset = -currentIndex * 100;
+  gallery.style.transform = `translateX(${offset}%)`; 
 }
 
 function goToSlide(index) {
@@ -54,10 +50,11 @@ btnRight.addEventListener("click", (e) => {
   updateSlidePosition();
 });
 
-/*Swipe (arrastar com o dedo)*/
+
 gallery.addEventListener("touchstart", (e) => {
   startX = e.touches[0].clientX;
   isDragging = true;
+  e.preventDefault();
 });
 
 gallery.addEventListener("touchmove", (e) => {
@@ -80,6 +77,11 @@ gallery.addEventListener("touchend", () => {
   isDragging = false;
 });
 
+
+let resizeTimeout;
 window.addEventListener("resize", () => {
-  updateSlidePosition();
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    updateSlidePosition();
+  }, 200);
 });

@@ -310,17 +310,18 @@
     max-width: 280px;
   }
 
+  .slider-container {
+    margin-top: 40px;
+  }
+
   .arrow-left,
   .arrow-right {
     font-size: 1.5rem;
+
   }
 
   .dots {
     margin-top: 10px;
-  }
-
-  .slider-container {
-    margin-top: 40px;
   }
 
   /* Ocultar menu desktop no mobile */

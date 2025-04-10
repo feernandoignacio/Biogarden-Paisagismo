@@ -1,4 +1,5 @@
-* { margin: 0;
+* {
+    margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
@@ -6,5 +7,5 @@
     vertical-align: baseline;
     font-family: 'Roboto', "Marcellus", sans-serif, "Marcellus SC", serif;
     scroll-padding-top: 65px;
+    scroll-behavior: smooth;
 }
-
