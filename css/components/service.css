@@ -67,8 +67,7 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-  margin: 0 auto;
-  /* Evite margens grandes no topo */
+  margin: 30px auto;
   padding: 0;
   overflow: hidden;
   height: 100%;
@@ -80,7 +79,6 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   height: 100%;
-  /* Ajustar a altura da galeria para não criar deslocamentos */
 }
 
 .gallery-wrapper::-webkit-scrollbar {
@@ -92,7 +90,6 @@
   gap: 20px;
   transition: transform 0.5s ease;
   height: 100%;
-  /* Garantir que a galeria tenha altura definida */
 }
 
 
