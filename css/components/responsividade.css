@@ -1,4 +1,58 @@
-/*MOBILE STYLES (max-width: 1020px)*/
+@media (min-width: 1921px) {
+
+  .link-menu {
+    font-size: 24px;
+  }
+
+  nav {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .link-menu {
+    font-family: "Marcellus", 'Roboto', sans-serif;
+    margin: 0 40px 0 80px;
+    color: #F6EFDD;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .banner {
+    padding-top: 120px;
+  }
+
+  .text-home {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .box-list {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .box-materials {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .description-service {
+    margin: 60px auto 40px;
+    max-width: 1200px;
+  }
+
+  .sobre-nos {
+    padding: 50px 100px 120px;
+  }
+}
+
+
 @media screen and (max-width: 1020px) {
 
   /* Header/Menu */
@@ -385,6 +439,60 @@
   .arrow-left,
   .arrow-right {
     display: none;
+  }
+}
+
+
+@media (max-width: 768px) and (max-width: 1020px) {
+
+  /* Header/Menu */
+  .menu-desktop {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #2B4739;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  .menu-desktop.active {
+    display: flex;
+  }
+
+  .btn-abrir-menu {
+    display: block;
+  }
+
+  .link-menu,
+  .button-header {
+    color: #F6EFDD;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .button-header {
+    margin: 10px auto 0 auto;
+    display: block;
+    width: fit-content;
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 10px;
+    top: 4px;
+    margin-right: 240px;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    display: none;
+    /* Esconde as setas do carrossel em telas menores */
   }
 }
 
