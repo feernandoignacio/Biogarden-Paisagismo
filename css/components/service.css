@@ -79,6 +79,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   height: 100%;
+  touch-action: pan-y pinch-zoom;
 }
 
 .gallery-wrapper::-webkit-scrollbar {
@@ -90,7 +91,9 @@
   gap: 20px;
   transition: transform 0.5s ease;
   height: 100%;
+  touch-action: pan-x;
 }
+
 
 
 .item {
