@@ -31,49 +31,53 @@
 
 
 <body>
+  <!--nav-->
   <header class="header">
+    <div class="nav-box">
 
-    <div id="loading-screen">
-      <img src="assets/file.jpg" alt="Logo da Empresa" id="logo" />
+      <a href="#home"><img class="icon" src="assets/icon.png"></a>
+
+
+      <nav class="nav">
+        <ul>
+          <li><a class="link-nav" href="#sobre">Sobre Nós</a></li>
+          <li><a class="link-nav" href="#produtos">Produtos</a></li>
+          <li><a class="link-nav" href="#materiais">Materiais & Paleta</a></li>
+          <li><a class="link-nav" href="#serviços">Serviços</a></li>
+        </ul>
+      </nav>
+      <div class="button-contato">
+        <a class="button-nav" href="https://wa.me/5519999042258?text=Olá Tudo Bem?! Quero conhecer mais produtos!"
+          target="_blank" data-i18n="nav-contato">Contato</a>
+      </div><!--Button-contato-->
     </div>
 
-    <a href="#home"><img class="icon" src="assets/icon.png"></a>
-
-    <nav class="menu-desktop">
-      <a class="link-menu" href="#sobre">Sobre Nós</a>
-      <a class="link-menu" href="#produtos">Produtos</a>
-      <a class="link-menu" href="#materiais">Materiais & Paleta</a>
-      <a class="link-menu" href="#serviços">Serviços</a>
-      <a class="button-header" href="https://wa.me/5519999042258?text=Olá Tudo Bem?! Quero conhecer mais produtos!"
-        target="_blank">Contato</a>
-    </nav>
-
-    <div class="btn-abrir-menu" id="btn-menu">
+    <div class="abrir-menu">
       <i class="bi bi-list"></i>
     </div>
-
 
     <div class="menu-mobile" id="menu-mobile">
       <div class="btn-fechar">
         <i class="bi bi-x-lg"></i>
+
       </div>
 
       <nav>
         <ul>
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#materiais">Materiais & Paleta</a></li>
-          <li><a href="#serviços">Serviços</a></li>
-          <li><a href="https://wa.me/5519999042258?text=Olá, tudo bem?! Vim pelo site. Quero conhecer mais produtos!"
-              target="_blank">Contato</a></li>
+          <li><a class="link-nav" href="#sobre-section" data-i18n="nav-sobre">Sobre</a></li>
+          <li><a class="link-nav" href="#skills-section" data-i18n="nav-skills">Skills</a></li>
+          <li><a class="link-nav" href="#projetos-destaque" data-i18n="nav-projetos">Projetos</a></li>
+          <li><a class="link-nav" href="https://wa.me/5547997119898" data-i18n="nav-contato">Contato</a></li>
         </ul>
       </nav>
-
     </div>
+    <div class="overlay-menu"></div>
 
-    <div class="overlay-menu" id="overlay-menu"></div>
 
   </header>
+
+
+
 
 
 

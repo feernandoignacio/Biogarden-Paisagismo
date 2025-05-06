@@ -1,43 +1,30 @@
 window.addEventListener("scroll", function(){
-    let header = document.querySelector('.header')
-    header.classList.toggle('rolagem', window.scrollY > 200)
+  let header = document.querySelector('.header')
+  header.classList.toggle('scroll',window.scrollY > 0)
 })
 
 
-document.addEventListener('DOMContentLoaded', function (){
-    const linksMenu = document.querySelectorAll('.link-menu');
+/*Menu responsivel*/
+document.addEventListener('DOMContentLoaded', () => {
+  const abrirMenu = document.querySelector('.abrir-menu');
+  const menuMobile = document.getElementById('menu-mobile');
+  const btnFechar = document.querySelector('.btn-fechar');
+  const overlayMenu = document.querySelector('.overlay-menu');
+  const menuLinks = document.querySelectorAll('.menu-mobile .link-nav');
 
-    linksMenu.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
+  function toggleMenu() {
+    menuMobile.classList.toggle('aberto');
+    overlayMenu.classList.toggle('aberto');
+  }
 
-          const targetId = this.getAttribute('href').substring(1);
+  abrirMenu.addEventListener('click', toggleMenu);
+  btnFechar.addEventListener('click', toggleMenu);
+  overlayMenu.addEventListener('click', toggleMenu);
 
-          const targetElement = document.getElementById(targetId);
-
-          if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - document.querySelector('nav.menu-desktop').offsetHeight,
-              behavior: 'smooth',
-
-            });
-        }
-      });
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menuMobile.classList.remove('aberto');
+      overlayMenu.classList.remove('aberto');
     });
   });
-
-
-let btMenu = document.getElementById('btn-menu')
-let menu = document.getElementById('menu-mobile')
-let overlay = document.getElementById('overlay-menu')
-
-btMenu.addEventListener('click',()=>{
-  menu.classList.add('abrir-menu')
-})
-
-menu.addEventListener('click',()=>{
-  menu.classList.remove('abrir-menu')
-})
-overlay.addEventListener('click',()=>{
-  menu.classList.remove('abrir-menu')
-})
+});
