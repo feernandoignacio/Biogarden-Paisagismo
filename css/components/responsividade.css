@@ -1,7 +1,6 @@
 /*nav*/
 @media (min-width: 1921px) {
 
-
   .title {
     font-size: 50px;
   }
@@ -13,6 +12,7 @@
   .text-home {
     width: 1200px;
     height: 400px;
+    margin: 0 auto;
   }
 
   .box-list {
