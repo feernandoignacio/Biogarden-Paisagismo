@@ -3,6 +3,16 @@ window.addEventListener("scroll", function(){
   header.classList.toggle('scroll',window.scrollY > 0)
 })
 
+/* Responsividade NAV */
+function adjustIntroHeight() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+window.addEventListener('resize', adjustIntroHeight);
+window.addEventListener('load', adjustIntroHeight);
+
+
+
 
 /*Menu responsivel*/
 document.addEventListener('DOMContentLoaded', () => {
