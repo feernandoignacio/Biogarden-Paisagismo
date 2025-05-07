@@ -111,28 +111,32 @@ header ul li a.link-nav:hover::after {
     top: 1.2rem;
     right: 1.5rem;
     z-index: 101;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .abrir-menu:hover {
-    transform: scale(1.1);
+    transform: scale(1.15) rotate(5deg);
+    color: #ffffff;
 }
 
 .menu-mobile {
     position: fixed;
     top: 0;
     right: 0;
-    width: 60%;
+    width: 70%;
+    max-width: 320px;
     height: 100vh;
-    background: linear-gradient(135deg, #1f1f1f 60%, #2c2c2c 100%);
+    backdrop-filter: blur(10px);
+    background: rgba(45, 45, 45, 0.85);
     z-index: 100;
     transform: translateX(100%);
-    transition: transform 0.4s ease;
+    transition: transform 0.5s ease;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 3rem;
+    padding: 2rem 2rem 8rem;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px 0 0 8px;
 }
 
 .menu-mobile.aberto {
@@ -147,11 +151,12 @@ header ul li a.link-nav:hover::after {
     color: #F6EFDD;
     cursor: pointer;
     z-index: 102;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .btn-fechar:hover {
-    transform: scale(1.1);
+    transform: scale(1.15) rotate(-5deg);
+    color: #ffffff;
 }
 
 .menu-mobile nav ul {
@@ -162,21 +167,39 @@ header ul li a.link-nav:hover::after {
 }
 
 .menu-mobile nav ul li {
-    margin: 1.8rem 0;
+    margin: 3rem 0;
 }
 
 .menu-mobile nav ul li a {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     letter-spacing: 1px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+.menu-mobile nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #F6EFDD;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
 }
 
 .menu-mobile nav ul li a:hover {
     color: #F6EFDD;
-    transform: translateX(5px);
+    transform: scale(1.05);
+}
+
+.menu-mobile nav ul li a:hover::after {
+    width: 60%;
 }
 
 .overlay-menu {
@@ -185,11 +208,11 @@ header ul li a.link-nav:hover::after {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
 .overlay-menu.aberto {

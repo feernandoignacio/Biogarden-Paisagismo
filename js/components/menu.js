@@ -1,7 +1,10 @@
-window.addEventListener("scroll", function(){
-  let header = document.querySelector('.header')
-  header.classList.toggle('scroll',window.scrollY > 0)
-})
+function checkScroll() {
+  const header = document.querySelector('.header');
+  header.classList.toggle('scroll', window.scrollY > 0);
+}
+
+window.addEventListener("scroll", checkScroll);
+window.addEventListener("load", checkScroll);
 
 /* Responsividade NAV */
 function adjustIntroHeight() {
