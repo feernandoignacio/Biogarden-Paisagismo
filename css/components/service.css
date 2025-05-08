@@ -125,6 +125,12 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.arrow-left:focus,
+.arrow-right:focus {
+  outline: none;
 }
 
 .arrow-left:hover,
